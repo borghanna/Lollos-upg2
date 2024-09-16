@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-color: #0b0f1a;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+section {
+    margin: auto;
+    width: 40%;
+}
+
+aside {
+    width: 25%;
+    margin: 0;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 50px;
+    margin-top: 20px;
+    width: 40%;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
