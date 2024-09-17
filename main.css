@@ -11,7 +11,12 @@ main {
     flex-wrap: wrap;
 }
 
-section {
+.om-oss {
+    margin: auto;  
+    width: 40%; 
+}
+
+.pizzameny {
     margin: auto;
     width: 50%;
     padding-left: 10px;
