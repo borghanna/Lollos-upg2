@@ -1,5 +1,7 @@
-body {
+body, html {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: #F6EDC2;
     color: rgb(0, 0, 0);
 }
@@ -16,6 +18,13 @@ main {
 .om-oss {
     margin: auto;  
     width: 40%; 
+}
+
+.meny-area {
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    color: purple;
 }
 
 .pizzameny {
@@ -72,7 +81,19 @@ aside {
     border-radius: 30px;
 }
 
+@media (max-width: 768px) {
+    .pizzameny, aside {
+        width: 100%;
+    }
 
+    h3, p {
+        font-size: 16px;
+    }
+
+    .image-om-oss {
+        width: 100%;
+    }
+}
 
 
 
