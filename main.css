@@ -17,6 +17,20 @@ section {
     padding-left: 10px;
     background-color: rgb(236, 236, 236);
     border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 3px;
+}
+
+h3 {
+    margin: 0;
+    padding: 5px 0;
+}
+
+p {
+    margin: 0;
+    padding: 0 0 10px 0;
 }
 
 .image-om-oss {
