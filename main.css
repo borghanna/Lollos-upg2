@@ -1,13 +1,15 @@
 body {
     margin: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: #F6EDC2;
     color: rgb(0, 0, 0);
 }
 
 main {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: start;
+    padding: 20px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
@@ -17,25 +19,34 @@ main {
 }
 
 .pizzameny {
-    margin: auto;
-    width: 50%;
+    margin: 0;
+    width: 20%;
     padding-left: 10px;
-    background-color: rgb(236, 236, 236);
+    border: 1px solid purple;
     border-radius: 30px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    row-gap: 3px;
+    grid-template-columns: 1fr;
+    row-gap: 1px;
+}
+
+.meny-underrubrik {
+    margin: 10px 0;
+    font-size: x-large;
 }
 
 h3 {
     margin: 0;
-    padding: 5px 0;
+    padding: 10px; 
 }
 
 p {
     margin: 0;
-    padding: 0 0 10px 0;
+    padding: 10px;
+    margin-top: -10px;
+}
+
+.om-oss {
+    width: 50%;
 }
 
 .image-om-oss {
@@ -45,12 +56,19 @@ p {
     align-items: center;
 }
 
+.rubrik-om-oss {
+    border: 0.5px solid purple;
+    border-radius: 30px;
+    padding: 10px;
+    width: 80px;
+}
+
 aside {
     width: 25%;
     margin: 0;
     padding-left: 10px;
     padding-right: 0;
-    background-color: rgb(236, 236, 236);
+    border: 1px solid purple;
     border-radius: 30px;
 }
 
