@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     background-color: #F6EDC2;
@@ -9,51 +10,132 @@ body {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 70px;
-    margin-bottom: 20px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+header {
+    background-color: purple; /*tror det blir bättre med en lila som drar mer åt blå? TODO testa i ilustrator, fixa logga*/
 }
 
 #navbar {
-    background-color: #2e0090;
+    background-color: purple;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 20px;
     position: sticky;
     top: 0;
+    margin-top: 0;
 }
 
 .huvudmeny {
+    display: contents;
     list-style: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-size: x-large;
+    font-size: larger;
+    margin-top: 0;
 }
 
 .mlink:link {
     color: #F6EDC2;
     text-decoration: none;
-    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 2px #F6EDC2;
 }
 
 .mlink:visited {
     color: #F6EDC2;
     text-decoration: none;
-    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 2px #F6EDC2;
 }
 
 .mlink:hover {
-    background-color: #a992db;
-    color: #2e0090;
-    padding: 10px;
-    border-radius: 5px;
+    color: purple;
+    background-color: #F6EDC2;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 2px #F6EDC2;
 }
 
+.menu-toggle {
+    display: none;
+}
 
-/*temporär, test av nav*/
+.dropdown-menu {
+    display: none;
+}
+
+/*temporär text för test att nav blir sticky vid scroll*/
 section {
     margin-left: 300px;
     margin-right: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .huvudmeny {
+        display: none;
+        /* Dold för mobil */
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: purple;
+        color: #F6EDC2;
+        font-size: 24px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        display: none; /* dold tills man klickar */
+        list-style: none;
+        background-color: purple;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .dropdown-menu .mlink:link, 
+    .mlink:visited {
+        display: block;
+        padding-top: 15px;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+        font-size: larger;
+        color: #F6EDC2;
+        text-decoration: none;
+        border: none;
+    }
+
+    .dropdown-menu .mlink:hover {
+        background-color: #F6EDC2;
+        color: purple;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    
+        margin: 0;
+    }
+
+    #navbar {
+        padding: 0;
+    }
 }
