@@ -39,6 +39,7 @@ main {
     margin: 10px 0;
     font-size: x-large;
     font-family: 'Quicksand', sans-serif;
+    text-align: center;
 }
 
 h3 {
@@ -102,6 +103,35 @@ p {
     transform: translateX(100px);
 }
 
+.om-oss-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.hitta-hit-img {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.hitta-hit-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.hover-image {
+    transition: opacity 0.3 ease;
+}
+
+.hover-image:hover {
+    opacity: 0.7;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -111,12 +141,6 @@ p {
         opacity: 1;
         transform: translateX(0);
     }
-}
-
-.om-oss-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 30px;
 }
 
 
