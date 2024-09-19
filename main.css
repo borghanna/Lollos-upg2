@@ -156,6 +156,10 @@ p {
     .om-oss-img, .om-oss, .rubrik-om-oss {
         width: 100%;
     }
+
+    .hitta-hit-img, .hover-image, .hover-image:hover {
+        width: 100%;
+    }
 }
 
 
