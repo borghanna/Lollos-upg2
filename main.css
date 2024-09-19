@@ -1,0 +1,167 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F6EDC2;
+    color: rgb(0, 0, 0);
+    font-family: 'Quicksand', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.meny-area {
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    color: purple;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.pizzameny {
+    margin: 0;
+    width: 20%;
+    padding-left: 10px;
+    border: 1px solid purple;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1px;
+}
+
+.meny-underrubrik {
+    margin: 10px 0;
+    font-size: x-large;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    padding: 10px; 
+    font-family: 'Quicksand', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 10px;
+    margin-top: -10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.aside-menysida {
+    width: 25%;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 0;
+    border: 1px solid purple;
+    border-radius: 30px;
+}
+
+.container-om-oss {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px purple solid;
+    border-radius: 30px;
+}
+
+.om-oss {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.rubrik-om-oss {
+    padding: 10px;
+    width: auto;
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.text-om-oss {
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+.om-oss-img {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+    padding-top: 110px;
+    opacity: 0 ;    
+    animation: fadeIn 0.5s ease-out 0.5s forwards;
+    transform: translateX(100px);
+}
+
+.om-oss-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.hitta-hit-img {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.hitta-hit-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.hover-image {
+    transition: opacity 0.3 ease;
+}
+
+.hover-image:hover {
+    opacity: 0.7;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .pizzameny, .aside-menysida {
+        width: 100%;
+    }
+
+    h3, p {
+        font-size: 16px;
+    }
+
+    .om-oss-img, .om-oss, .rubrik-om-oss {
+        width: 100%;
+    }
+
+    .hitta-hit-img, .hover-image, .hover-image:hover {
+        width: 100%;
+    }
+}
+
+
+
+
