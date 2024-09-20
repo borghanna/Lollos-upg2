@@ -84,12 +84,6 @@ header {
     display: none;
 }
 
-/*temporär text för test att nav blir sticky vid scroll*/
-section {
-    margin: 100px 300px;
-}
-
-
 
 /*slut justeringar header nav*/
 
