@@ -8,11 +8,69 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="main.css">
+
+        <!--Font awesome länk-->
+        <script src="https://kit.fontawesome.com/91875bc74e.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
 
-        <main class="container-om-oss">
+        <header>
+            <img class="logo" src="logotyp/lollos-logo-ny.png" alt="Lollo logotyp"/>
+        </header>
+
+    <main>
+        <nav id="navbar"> <!--OBS Måste ligga i main för att sticky funkttionen ska fungera-->
+            <button id="menu-toggle" class="menu-toggle">☰</button> <!-- Toggle Button för dropdown meny -->
+            
+            <ul class="huvudmeny"> <!--synlig meny för dator-->
+                <li class="menyval">
+                    <a href="om-oss.html" class="mlink">
+                        OM OSS
+                    </a>
+                </li>
+                <li class="menyval">
+                    <a href="menysida.html" class="mlink">
+                        MENY
+                    </a>
+                </li>
+                <li class="menyval">
+                    <a href="lunchmeny.html" class="mlink">
+                        LUNCH
+                    </a>
+                </li>
+                <li class="menyval">
+                    <a href="hittahit.html" class="mlink">
+                        HITTA HIT
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="dropdown-menu" id="dropdown-menu"> <!-- Dold dropdown-meny för mobil -->
+                <li class="om-oss">
+                    <a href="#" class="mlink">
+                        OM OSS
+                    </a>
+                </li>
+                <li class="menyval">
+                    <a href="menysida.html" class="mlink">
+                        MENY
+                    </a>
+                </li>
+                <li class="menyval">
+                    <a href="lunchmeny.html" class="mlink">
+                        LUNCH
+                    </a>
+                </li>
+                <li class="menyval">
+                    <a href="hittahit.html" class="mlink">
+                        HITTA HIT
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container-om-oss">
             <section class="om-oss">          
                 <h1>Hitta hit</h1>
                 <h3>ADRESS</h3> 
