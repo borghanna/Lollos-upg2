@@ -96,7 +96,7 @@ section {
 /*Wilmas justeringar*/
 
 
-main {
+.menycontainer { 
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -109,9 +109,6 @@ main {
 .meny-area {
     width: 100%;
     text-align: center;
-    font-size: x-large;
-    color: #7B00F2;
-    font-family: 'Quicksand', sans-serif;
 }
 
 .pizzameny {
@@ -155,6 +152,9 @@ p {
 
 /*Om oss sidan justeringar*/
 .container-om-oss {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -163,16 +163,20 @@ p {
 }
 
 .om-oss {
-    width: 50%;
+    width: 60%;
     padding: 20px;
     box-sizing: border-box;
 }
 
-.rubrik-om-oss {
+h1 {
     padding: 10px;
     width: auto;
     display: inline-block;
     font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+    color: #7B00F2;
+    font-weight: 600;
+    font-size: xx-large;
 }
 
 .text-om-oss {
