@@ -91,16 +91,13 @@ header {
 
 
 .menycontainer { 
-=======
-/*main {
->>>>>>> 0c4846b0323d6160381a374e7e390cd5ed0f8072
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
     gap: 10px;
     flex-wrap: wrap;
-}*/
+}
 
 /* Menysida justeringar*/
 .meny-area {
@@ -153,7 +150,7 @@ p {
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 100px auto;
     padding: 20px;
     border: 3px #7B00F2 solid;
     border-radius: 30px;
