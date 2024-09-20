@@ -7,6 +7,95 @@ body, html {
     font-family: 'Quicksand', sans-serif;
 }
 
+/*Justeringar header och nav (Hanna) */
+.logo {
+    display: block;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: #7B00F2;
+}
+
+#navbar {
+    background-color: #7B00F2;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: sticky;
+    top: 0;
+}
+
+.huvudmeny {
+    display: contents;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: larger;
+    margin-top: 0;
+}
+
+.mlink:link {
+    color: #F6EDC2;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 2px #F6EDC2;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.mlink:visited {
+    color: #F6EDC2;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 2px #F6EDC2;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.mlink:hover {
+    color: #7B00F2;
+    background-color: #F6EDC2;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 2px #F6EDC2;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+/*temporär text för test att nav blir sticky vid scroll*/
+section {
+    margin: 100px 300px;
+}
+
+
+
+/*slut justeringar header nav*/
+
+/*Wilmas justeringar*/
+
+
 main {
     display: flex;
     justify-content: center;
@@ -16,6 +105,7 @@ main {
     flex-wrap: wrap;
 }
 
+/* Menysida justeringar*/
 .meny-area {
     width: 100%;
     text-align: center;
@@ -38,21 +128,18 @@ main {
 .meny-underrubrik {
     margin: 10px 0;
     font-size: x-large;
-    font-family: 'Quicksand', sans-serif;
     text-align: center;
 }
 
 h3 {
     margin: 0;
     padding: 10px; 
-    font-family: 'Quicksand', sans-serif;
 }
 
 p {
     margin: 0;
     padding: 10px;
     margin-top: -10px;
-    font-family: 'Quicksand', sans-serif;
 }
 
 .aside-menysida {
@@ -64,6 +151,9 @@ p {
     border-radius: 30px;
 }
 
+/*Menysida slut*/
+
+/*Om oss sidan justeringar*/
 .container-om-oss {
     max-width: 1200px;
     margin: 0 auto;
@@ -108,7 +198,9 @@ p {
     height: auto;
     border-radius: 30px;
 }
+/*Om oss slut*/
 
+/*Hitta hit sidan justeringar*/
 .hitta-hit-img {
     width: 40%;
     display: flex;
@@ -142,9 +234,55 @@ p {
         transform: translateX(0);
     }
 }
+/*Hitta hit slut*/
+/*Slut Wilmas*/
 
+
+/*justeringar för footer (Hanna)*/
+
+footer {
+    background-color: #7B00F2;
+    color: #F6EDC2;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+#f-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+
+.flink:link,
+.flink:hover,
+.flink:visited {
+    color: #F6EDC2;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 400;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.madeby {
+    text-align: center;
+    margin-top: auto;
+}
+
+
+/*footer slut*/
 
 @media (max-width: 768px) {
+
+    /*Wilma*/
     .pizzameny, .aside-menysida {
         width: 100%;
     }
@@ -156,12 +294,90 @@ p {
     .om-oss-img, .om-oss, .rubrik-om-oss {
         width: 100%;
     }
-
-    .hitta-hit-img, .hover-image, .hover-image:hover {
+    .hitta-hit-img,
+    .hover-image,
+    .hover-image:hover {
         width: 100%;
     }
-}
 
+    /*slut Wilma*/
 
+    /*header och nav mobil (Hanna)*/
+    .huvudmeny {
+        display: none;
+        /* Dold för mobil */
+    }
 
+    .logo {
+        width: 70%;
+    }
 
+    .menu-toggle {
+        /*knapp för dropdown som styrs mad JS*/
+        display: block;
+        background-color: #7B00F2;
+        color: #F6EDC2;
+        font-size: xx-large;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        display: none;
+        /* dold tills man klickar */
+        list-style: none;
+        background-color: #7B00F2;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .dropdown-menu .mlink:link,
+    .mlink:visited {
+        display: block;
+        padding-top: 15px;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+        font-size: larger;
+        color: #F6EDC2;
+        text-decoration: none;
+        border: none;
+        font-weight: 600;
+        border-radius: 0;
+    }
+
+    .dropdown-menu .mlink:hover {
+        background-color: #F6EDC2;
+        color: #7B00F2;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+        font-weight: 600;
+        border-radius: 0;
+    }
+
+    #navbar {
+        padding: 0;
+    }
+
+    /*slut header, nav mobil*/
+
+    /* footer mobil/pad (Hanna)*/
+    .text-flink {
+        display: none;
+    }
+
+    footer {
+        padding-top: 70px;
+    }
+
+    .madeby {
+        font-size: smaller;
+    }
+
+    }
