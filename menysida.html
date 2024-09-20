@@ -14,7 +14,63 @@
 
     <body>
 
+        <header>
+
+            <img class="logo" src="logotyp/lollos-logo-ny.png" alt="Lollo logotyp"/>
+        </header>
+
         <main>
+            <nav id="navbar"> <!--OBS Måste ligga i main för att sticky funkttionen ska fungera-->
+                <button id="menu-toggle" class="menu-toggle">☰</button> <!-- Toggle Button för dropdown meny -->
+                
+                <ul class="huvudmeny"> <!--synlig meny för dator-->
+                    <li class="menyval">
+                        <a href="om-oss.html" class="mlink">
+                            OM OSS
+                        </a>
+                    </li>
+                    <li class="menyval">
+                        <a href="menysida.html" class="mlink">
+                            MENY
+                        </a>
+                    </li>
+                    <li class="menyval">
+                        <a href="lunchmeny.html" class="mlink">
+                            LUNCH
+                        </a>
+                    </li>
+                    <li class="menyval">
+                        <a href="hittahit.html" class="mlink">
+                            HITTA HIT
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="dropdown-menu" id="dropdown-menu"> <!-- Dold dropdown-meny för mobil -->
+                    <li class="om-oss">
+                        <a href="#" class="mlink">
+                            OM OSS
+                        </a>
+                    </li>
+                    <li class="menyval">
+                        <a href="menysida.html" class="mlink">
+                            MENY
+                        </a>
+                    </li>
+                    <li class="menyval">
+                        <a href="lunchmeny.html" class="mlink">
+                            LUNCH
+                        </a>
+                    </li>
+                    <li class="menyval">
+                        <a href="hittahit.html" class="mlink">
+                            HITTA HIT
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+
 
             <div class="menycontainer">
             <section class="meny-area">
