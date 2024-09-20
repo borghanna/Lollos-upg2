@@ -90,14 +90,18 @@ header {
 /*Wilmas justeringar*/
 
 
+<<<<<<< HEAD
 .menycontainer { 
+=======
+/*main {
+>>>>>>> 0c4846b0323d6160381a374e7e390cd5ed0f8072
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
     gap: 10px;
     flex-wrap: wrap;
-}
+}*/
 
 /* Menysida justeringar*/
 .meny-area {
