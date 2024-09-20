@@ -96,14 +96,14 @@ section {
 /*Wilmas justeringar*/
 
 
-main {
+/*main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
     gap: 10px;
     flex-wrap: wrap;
-}
+}*/
 
 /* Menysida justeringar*/
 .meny-area {
