@@ -20,7 +20,7 @@
         </header>
 
     <main>
-        <nav id="navbar"> <!--OBS Måste ligga i main för att sticky funkttionen ska fungera-->
+        <nav id="navbar" aria-label="Huvudmeny"> <!--OBS Måste ligga i main för att sticky funktionen ska fungera-->
             <button id="menu-toggle" class="menu-toggle">☰</button> <!-- Toggle Button för dropdown meny -->
             
             <ul class="huvudmeny"> <!--synlig meny för dator-->
@@ -70,13 +70,13 @@
             </ul>
         </nav>
 
-        <div class="container-om-oss">
+        <div class="container-om-oss" tabindex="0">
             <section class="om-oss">          
                 <h1>Hitta hit</h1>
-                <h3>ADRESS</h3> 
+                <h2>ADRESS</h2> 
                 <p class="text-om-oss">Brunnsbotorget 8, 422 42 Hisings Backa</p>
                 <p>Lollos pizzeria & resturang ligger på Brunnsbotorget nära till busshållplatsen.</p>
-                <h3>KONTAKT</h3>
+                <h2>KONTAKT</h2>
                 <p>031-23 22 22<br>info@lollospizzeria.se</p>
             </section>
 
@@ -91,33 +91,33 @@
 
     <footer>
             
-        <div id="f-container">
-            <a href="tel:+4631232222" class="flink">
+        <nav id="f-container" aria-label="Footermeny">
+            <a href="tel:+4631232222" class="flink" alt="Telefonnummer">
                 <p class="text-flink">Ring oss</p>
                 <i class="fa-solid fa-phone fa-2x"></i>
             </a>
         
         
         
-            <a href="mailto:someone@example.com" class="flink">
+            <a href="mailto:someone@example.com" class="flink" alt="Mailadress">
                 <p class="text-flink">Maila oss</p>
                 <i class="fa-solid fa-paper-plane fa-2x"></i>
             </a>
         
         
         
-            <a href="https://www.facebook.com/LollosRestaurang" class="flink">
+            <a href="https://www.facebook.com/LollosRestaurang" class="flink" alt="Facebooksida">
                 <p class="text-flink">Facebook</p>
                 <i class="fa-brands fa-facebook-f fa-2x"></i>
             </a>
         
         
         
-            <a href="https://maps.app.goo.gl/dYH7A7JNuWqp9VkH7" class="flink">
+            <a href="https://maps.app.goo.gl/dYH7A7JNuWqp9VkH7" class="flink" alt="Google Maps">
                 <p class="text-flink">Google maps</p>
                 <i class="fa-solid fa-location-dot fa-2x"></i>
             </a>
-        </div>
+        </nav>
 
         <p class="madeby">Sidan är skapad av Wilma Håkanson och Hanna Borg, Medieinstitutet.</p>
     

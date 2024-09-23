@@ -23,7 +23,7 @@
         </header>
 
         <main>
-            <nav id="navbar">
+            <nav id="navbar" aria-label="Huvudmeny">
                 <button id="menu-toggle" class="menu-toggle">☰</button> <!-- Toggle Button för dropdown meny -->
                 
                 <ul class="huvudmeny"> <!--synlig meny för dator-->
@@ -77,15 +77,15 @@
             <section id="sectionmainlm">
 
                 <h1>LUNCHMENY</h1>
-                <h2>Måndag - Fredag mellan 10:30 - 14:00</h2>
-                    <h2>Valfri dryck ingår i erbjudandet</h2>
+                <h2 tabindex="0">Måndag - Fredag mellan 10:30 - 14:00</h2>
+                    <h2 tabindex="0">Valfri dryck ingår i erbjudandet</h2>
 
 
                 <div id="lmbottom">
 
                     <div class="lmcolumn">
 
-                        <div class="lmcontainer">
+                        <div class="lmcontainer" tabindex="0">
                             <h3>PIZZA 119:-</h3>
                             <p>från nr 1-16</p>
                             <img class="lmimage" src="bilder-meny/pizza.png" alt="Pizza"/>
@@ -155,33 +155,33 @@
 
         <footer>
             
-            <div id="f-container">
-                <a href="tel:+4631232222" class="flink">
+            <nav id="f-container" aria-label="Footermeny">
+                <a href="tel:+4631232222" class="flink" alt="Telefonnummer">
                     <p class="text-flink">Ring oss</p>
                     <i class="fa-solid fa-phone fa-2x"></i>
                 </a>
             
             
             
-                <a href="mailto:someone@example.com" class="flink">
+                <a href="mailto:someone@example.com" class="flink" alt="Mailadress">
                     <p class="text-flink">Maila oss</p>
                     <i class="fa-solid fa-paper-plane fa-2x"></i>
                 </a>
             
             
             
-                <a href="https://www.facebook.com/LollosRestaurang" class="flink">
+                <a href="https://www.facebook.com/LollosRestaurang" class="flink" alt="Facebooksida">
                     <p class="text-flink">Facebook</p>
                     <i class="fa-brands fa-facebook-f fa-2x"></i>
                 </a>
             
             
             
-                <a href="https://maps.app.goo.gl/dYH7A7JNuWqp9VkH7" class="flink">
+                <a href="https://maps.app.goo.gl/dYH7A7JNuWqp9VkH7" class="flink" alt="Google Maps">
                     <p class="text-flink">Google maps</p>
                     <i class="fa-solid fa-location-dot fa-2x"></i>
                 </a>
-            </div>
+            </nav>
 
             <p class="madeby">Sidan är skapad av Wilma Håkanson och Hanna Borg, Medieinstitutet.</p>
         
