@@ -8,13 +8,73 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="main.css">
+        <!--Font awesome länk-->
+        <script src="https://kit.fontawesome.com/91875bc74e.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
 
+        <header>
+
+            <img class="logo" src="logotyp/lollos-logo-ny.png" alt="Lollo logotyp"/>
+        </header>
+
         <main>
+            <nav id="navbar"> <!--OBS Måste ligga i main för att sticky funkttionen ska fungera-->
+                <button id="menu-toggle" class="menu-toggle">☰</button> <!-- Toggle Button för dropdown meny -->
+                
+                <ul class="huvudmeny"> <!--synlig meny för dator-->
+                    <li class="menyval">
+                        <a href="om-oss.html" class="mlink">
+                            OM OSS
+                        </a>
+                    </li>
+                    <li class="menyval">
+                        <a href="menysida.html" class="mlink">
+                            MENY
+                        </a>
+                    </li>
+                    <li class="menyval">
+                        <a href="lunchmeny.html" class="mlink">
+                            LUNCH
+                        </a>
+                    </li>
+                    <li class="menyval">
+                        <a href="hittahit.html" class="mlink">
+                            HITTA HIT
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="dropdown-menu" id="dropdown-menu"> <!-- Dold dropdown-meny för mobil -->
+                    <li class="om-oss">
+                        <a href="#" class="mlink">
+                            OM OSS
+                        </a>
+                    </li>
+                    <li class="menyval">
+                        <a href="menysida.html" class="mlink">
+                            MENY
+                        </a>
+                    </li>
+                    <li class="menyval">
+                        <a href="lunchmeny.html" class="mlink">
+                            LUNCH
+                        </a>
+                    </li>
+                    <li class="menyval">
+                        <a href="hittahit.html" class="mlink">
+                            HITTA HIT
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+
+
+            <div class="menycontainer">
             <section class="meny-area">
-                <h1><i>Menyer</i></h1>
+                <h1>Menyer</h1>
             </section>
 
             <section class="pizzameny">
@@ -108,10 +168,45 @@
                 <h2>TEL: 031-23 22 22</h2>
                 <h2>ADRESS: Brunnsbotorget 8</h2>
             </aside>
-           
-    
+        </div>
+
         </main>
 
+           <footer>
+            
+                <div id="f-container">
+                    <a href="tel:+4631232222" class="flink">
+                        <p class="text-flink">Ring oss</p>
+                        <i class="fa-solid fa-phone fa-2x"></i>
+                    </a>
+                
+                
+                
+                    <a href="mailto:someone@example.com" class="flink">
+                        <p class="text-flink">Maila oss</p>
+                        <i class="fa-solid fa-paper-plane fa-2x"></i>
+                    </a>
+                
+                
+                
+                    <a href="https://www.facebook.com/LollosRestaurang" class="flink">
+                        <p class="text-flink">Facebook</p>
+                        <i class="fa-brands fa-facebook-f fa-2x"></i>
+                    </a>
+                
+                
+                
+                    <a href="https://maps.app.goo.gl/dYH7A7JNuWqp9VkH7" class="flink">
+                        <p class="text-flink">Google maps</p>
+                        <i class="fa-solid fa-location-dot fa-2x"></i>
+                    </a>
+                </div>
+
+                <p class="madeby">Sidan är skapad av Wilma Håkanson och Hanna Borg, Medieinstitutet.</p>
+            
+            </footer>
+
+        <script src="main.js"></script> <!--länk Javascript-->
     </body>
 
 </html>
